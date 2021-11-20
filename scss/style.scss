@@ -1,0 +1,110 @@
+$font_primary: 'Roboto', sans-serif;
+$font_header:  'M PLUS Code Latin', sans-serif;
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  max-width: 1400px;
+
+}
+
+.top {
+  background: url(/images/header_bg_h1.webp) center / cover no-repeat;
+   @media screen and (min-width: 900px) {
+    background-position: top;
+  }
+  height: 500px;
+  margin: 0;
+  font-family: $font_primary;
+  display: flex;
+  flex-direction: column;
+  &__nav {
+    order: 2;
+    @media screen and (min-width: 540px) {
+      order: 1;
+    }
+    ul {
+      @media screen and (min-width: 540px) {
+        display: flex;
+        justify-content: space-around;
+      }
+      padding: 0;
+      margin-top: 0;
+      li {
+        list-style: none;
+         padding: 15px 10px;
+         a {
+          text-decoration: none;
+          color: white;
+          text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+          &:hover {
+            font-weight: 700;
+            border-bottom: 2px solid white;
+          }
+        }
+      }
+    }
+  }
+  &__header {
+    order: 1;
+    height: 400px;
+    @media screen and (min-width: 540px) {
+      order: 2;
+    }
+    h1 {
+      display: none;
+    }
+  }
+}
+
+
+.container__box {
+  font-family: $font_primary;
+  letter-spacing: .8px;
+  font-size: 18px;
+  font-weight: lighter;
+  background: white;
+  max-width: 640px;
+  margin: auto;
+  padding: 50px;
+  &:first-child {
+    @media screen and (min-width: 900px) {
+      margin-top: -40px;
+    }
+  }
+  @media screen and (min-width:900px) {
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.25);
+    margin: 40px auto;
+  }
+  h2 {
+    font-family: $font_header;
+  }
+  p {
+    line-height: 1.5;
+    margin-top: 0;
+  }
+}
+
+.box__flex {
+  display: flex;
+  align-items: flex-start;
+  &--content {
+    flex: 1 1 70%;
+  }
+  &--image img {
+    flex: 1 1 30%;
+    width: 100%;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.25);
+  }
+}
+
+.footer {
+  padding-top: 20px;
+  font-family: $font_header;
+  text-align: center;
+}
