@@ -1,0 +1,53 @@
+@use 'variables';
+.box {
+  font-family: variables.$font_primary;
+  letter-spacing: .8px;
+  font-size: 18px;
+  font-weight: lighter;
+  background: variables.$c_contrast;
+  max-width: 640px;
+  margin: auto;
+  padding: 50px;
+  &:first-child {
+    @media screen and (min-width: variables.$large_bp) {
+      margin-top: -40px;
+    }
+  }
+  @media screen and (min-width: variables.$large_bp) {
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.25);
+    margin: 40px auto;
+  }
+  h2 {
+    font-family: variables.$font_header;
+  }
+  p {
+    line-height: 1.5;
+    margin-top: 0;
+  }
+}
+
+.box__flex {
+  @media screen and (min-width: variables.$small_bp) {
+    display: flex;
+    align-items: flex-start;
+  }
+  &--content {
+    @media screen and (min-width: variables.$small_bp) {
+      flex: 1 1 70%;
+    }
+  }
+  &--image img {
+    @media screen and (min-width: variables.$small_bp) {
+      flex: 1 1 30%;
+    }
+    width: 100%;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.25);
+  }
+}
+
+.content {
+  .box {
+    max-width: 800px;
+    box-shadow: none;
+  }
+}

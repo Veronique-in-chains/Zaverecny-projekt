@@ -1,0 +1,74 @@
+@use 'variables';
+
+.nav {
+  &__checkbox {
+    position: absolute;
+    left: -9999px;
+    &:checked ~ .nav__list {
+      @media screen and (max-width: 539px) {
+        display: block;
+      }
+    }
+  }
+  &__list {
+    display: none;
+    margin: auto;
+    text-align: center;
+    padding: 0;
+    list-style: none;
+    background-color: rgba(0, 0, 0, 0.7);
+    @media screen and (min-width: variables.$small_bp) {
+      display: flex;
+      justify-content: space-around;
+      background-color: transparent;
+    }
+  }
+  &__item {
+    display: block;
+    padding: 15px;
+  }
+  &__link {
+    display: block;
+    text-decoration: none;
+    color: variables.$c_contrast;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+    &:hover {
+      font-weight: 700;
+      @media screen and (min-width: variables.$small_bp) {
+        border-bottom: 2px solid variables.$c_contrast;
+      }
+    }
+  }
+  &__toggler {
+    display: block;
+    width: 30px;
+    margin: 20px auto 0 auto;
+    @media screen and (min-width: variables.$small_bp) {
+      display: none;
+    }
+    .hamburger {
+      stroke: variables.$c_contrast;
+    }
+  }
+}
+
+
+.top-content {
+  .nav {
+    &__list {
+      background-color: transparent;
+    }
+    &__link {
+      color: variables.$c_primary;
+      font-family: variables.$font_primary;
+      &:hover {
+        border-color: variables.$c_primary;
+      }
+    }
+    &__toggler {
+      .hamburger {
+        stroke: variables.$c_primary;
+      }
+    }
+  }
+}

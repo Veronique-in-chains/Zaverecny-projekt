@@ -1,0 +1,31 @@
+@use 'variables';
+
+
+.top {
+  background: url(/images/header_bg_h1.webp) bottom / cover no-repeat;
+   @media screen and (min-width: variables.$medium_bp) {
+    background-position: top;
+    height: 650px;
+  }
+  height: 500px;
+  margin: 0;
+  font-family: variables.$font_primary;
+  display: flex;
+  flex-direction: column;
+  &__header {
+    height: 400px;
+    h1 {
+      display: none;
+    }
+  }
+}
+
+
+.top-content {
+  .hero {
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+  }
+}
