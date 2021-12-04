@@ -1,0 +1,44 @@
+[
+	{
+		"nazev": "Dálky",
+		"autor": "Jiří Novák",
+    "rok": 1969,
+    "popis": "Dominanta sídliště, kinetická plastika s bazénkem, zdobí náměstíčko před hotelovým domem. Při renovaci náměstí v roce 2010 byla zrestaurována.",
+    "foto": "dalky_detail.webp"
+	},
+	{
+		"nazev": "Sedící figura",
+		"autor": "Miloslav Chlupáč",
+    "rok": 1973,
+    "popis": "Travertinová socha byla odstraněna při rekonstrukci náměstí a její další osud nebyl znám. V roce 2019 byla náhodou objevena na skládce v Řeporyjích a po zrestaurování vrácena na náměstí, tentokrát před kulturní centrum.",
+    "foto": "sedici-figura.webp"
+	},
+	{
+		"nazev": "Tanec",
+		"autor": "Ladislav Kovařík",
+    "rok": 1967,
+    "popis": "Třetí dílo, které nalezneme na náměstíčku, je sousoší Tanec, uprostřed atria mezi poštou a květinářstvím. Socha sem byla přestěhována až v devadesátých letech, její původní domov byl na Zahradním městě u nákupního centra Cíl.",
+    "foto": "tanec.webp"
+	},
+	{
+		"nazev": "Sloup",
+		"autor": "Věra Janoušková",
+    "rok": 1969,
+    "popis": "Osinkocementová plastika Sloup není příliš nápadná a snadno ji přehlédneme. Najdeme ji na Novodvorské na druhé straně ulice od náměstí.",
+    "foto": "sloup.webp"
+	},
+	{
+		"nazev": "Vazby",
+		"autor": "Jiří Novák",
+    "rok": 0,
+    "popis": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nulla non arcu lacinia neque faucibus fringilla. Praesent vitae arcu tempor neque lacinia pretium. Morbi leo mi, nonummy eget tristique non, rhoncus non leo. Integer in sapien.",
+    "foto": "kajaky.webp"
+	},
+  {
+		"nazev": "Keramické sloupky",
+		"autor": "Alena Kroupová",
+    "rok": 0,
+    "popis": "Pozůstatky dekorativní stěny z glazovaných bílo-žlutých keramických sloupků.",
+    "foto": "sloupky.webp"
+	}
+]

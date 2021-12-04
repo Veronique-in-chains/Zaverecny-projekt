@@ -1,6 +1,7 @@
 ---
 layout: template-content-page.njk
 title: Sochy | Sídliště Novodvorská
+foto: striska.webp
 ---
 
 
@@ -10,25 +11,11 @@ title: Sochy | Sídliště Novodvorská
   <h2>Sochy</h2>
 
   <div class="gallery">
-    <div class="gallery__item">
-      <img class="gallery__photo" src="/images/kajaky.webp" alt="Vazby">
-    </div>
-    <div class="gallery__item">
-      <img class="gallery__photo" src="/images/sedici-figura.webp" alt="Sedící figura">
-    </div>
-    <div class="gallery__item">
-      <img class="gallery__photo" src="/images/sloupky.webp" alt="Sloupky">
-    </div>
-    <div class="gallery__item">
-      <img class="gallery__photo" src="/images/sloup.webp" alt="Sloup">
-    </div>
-    <div class="gallery__item">
-      <img class="gallery__photo" src="/images/tanec.webp" alt="Tanec">
-      <div class="description">Autor: ŠJů, Wikimedia Commons, <a href="https://creativecommons.org/licenses/by-sa/3.0" title="Creative Commons Attribution-Share Alike 3.0">CC BY-SA 3.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=21923873">Odkaz</a>
+
+    {% for socha in sochy %}
+      <div class="gallery__item">
+      <a href="/sochy/{{ socha.nazev | slug }}"><img class="gallery__photo" src="/images/{{ socha.foto }}" alt="{{ socha.nazev }}"></a>
       </div>
-    </div>
-    <div class="gallery__item">
-      <img class="gallery__photo" src="/images/dalky_detail.webp" alt="Dálky">
-    </div>
+    {% endfor %}
   </div>
 </div>

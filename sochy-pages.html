@@ -1,0 +1,28 @@
+---
+pagination:
+  data: sochy
+  size: 1
+  alias: socha
+permalink: "sochy/{{ socha.nazev | slug }}/"
+layout: template-content-page.njk
+foto: kajaky_detail.webp
+---
+<div class="box">
+<article class="article">
+  <h2>{{ socha.nazev }}</h2>
+  <div class="article__grid">
+  <img class="article__photo" src="/images/{{ socha.foto }}" alt="{{ socha.nazev }}">
+  <div class="article__content">
+  <p>
+    Autor: {{ socha.autor }}
+  </p>
+  <p>
+    Rok vzniku: {{ socha.rok }}
+  </p>
+  <p>
+    {{ socha.popis }}
+  </p>
+</div>
+</div>
+</article>
+</div>

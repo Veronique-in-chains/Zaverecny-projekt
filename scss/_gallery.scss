@@ -2,21 +2,15 @@
 
 .gallery {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 3px;
+
   &__item {
     margin: 0;
     padding: 0;
     overflow: hidden;
     &:hover .gallery__photo {
       transform: scale(1.2);
-    }
-    .description {
-      margin-top: -30px;
-      text-align: right;
-      color: variables.$c_contrast;
-      font-size: 13px;
-      padding: 0;
     }
   }
   &__photo {
