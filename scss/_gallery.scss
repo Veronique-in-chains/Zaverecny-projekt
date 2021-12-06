@@ -3,7 +3,7 @@
 .gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 3px;
+  gap: 1px;
 
   &__item {
     margin: 0;
@@ -11,6 +11,10 @@
     overflow: hidden;
     &:hover .gallery__photo {
       transform: scale(1.2);
+    }
+    a {
+      text-decoration: none;
+      color: variables.$c_contrast;
     }
   }
   &__photo {
@@ -21,5 +25,20 @@
     overflow: hidden;
     filter: grayscale(0.5);
     transition: transform 0.5s;
+  }
+  &__description {
+    background-color: rgba(255, 255, 255, 0.3);
+    text-align: center;
+    margin-top: -73px;
+    padding: 10px;
+    position: relative;
+    color: variables.$c_contrast;
+    h3 {
+      margin: 0;
+      color: variables.$c_contrast;
+    }
+    p {
+      margin: 0;
+    }
   }
 }

@@ -14,7 +14,13 @@ foto: striska.webp
 
     {% for socha in sochy %}
       <div class="gallery__item">
-      <a href="/sochy/{{ socha.nazev | slug }}"><img class="gallery__photo" src="/images/{{ socha.foto }}" alt="{{ socha.nazev }}"></a>
+      <a href="/sochy/{{ socha.nazev | slug }}">
+        <img class="gallery__photo" src="/images/{{ socha.foto }}" alt="{{ socha.nazev }}">
+        <div class="gallery__description">
+          <h3>{{ socha.nazev }}</h3>
+          <p>zobrazit detail</p>
+        </div>
+      </a>
       </div>
     {% endfor %}
   </div>

@@ -1,0 +1,17 @@
+---
+pagination:
+  data: panelaky
+  size: 1
+  alias: panelak
+permalink: "panelaky/{{ panelak.nazev | slug }}/"
+layout: template-content-page.njk
+foto: namesti_jaro.webp
+---
+
+<div class="box">
+  <article class="article">
+<h2>{{ panelak.nazev }}</h2>
+<p>{{ panelak.popis }}</p>
+<p>{{ panelak.popis2 }}</p>
+</article>
+</div>

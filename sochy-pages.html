@@ -14,15 +14,23 @@ foto: kajaky_detail.webp
   <img class="article__photo" src="/images/{{ socha.foto }}" alt="{{ socha.nazev }}">
   <div class="article__content">
   <p>
-    Autor: {{ socha.autor }}
+    <span class="article__span">Autor:</span> {{ socha.autor }}
   </p>
   <p>
-    Rok vzniku: {{ socha.rok }}
+    <span class="article__span">Rok vzniku:</span> {{ socha.rok }}
   </p>
   <p>
     {{ socha.popis }}
   </p>
+  {% if socha.licence %}
+  <div class="article__credit">
+  Foto:
+    <p><a href="{{ socha.licence }}">{{ socha.attribution }}</a>, 
+      <a href="{{ socha.licenceLink }}">{{ socha.licenceNazev }}</a>, via Wikimedia Commons.</p>
+  </div>
+  {% endif %}
 </div>
 </div>
+<p class="article__linkback"><a href="/sochy/"><< zpět na přehled</a></p>
 </article>
 </div>

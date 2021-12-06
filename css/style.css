@@ -123,6 +123,9 @@
 .box h2 {
   font-family: "M PLUS Code Latin", sans-serif;
 }
+.box h3 {
+  font-family: "M PLUS Code Latin", sans-serif;
+}
 .box p {
   line-height: 1.5;
   margin-top: 0;
@@ -156,7 +159,7 @@
 .gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 3px;
+  gap: 1px;
 }
 .gallery__item {
   margin: 0;
@@ -165,6 +168,10 @@
 }
 .gallery__item:hover .gallery__photo {
   transform: scale(1.2);
+}
+.gallery__item a {
+  text-decoration: none;
+  color: #ffffff;
 }
 .gallery__photo {
   width: 100%;
@@ -176,14 +183,54 @@
   filter: grayscale(0.5);
   transition: transform 0.5s;
 }
+.gallery__description {
+  background-color: rgba(255, 255, 255, 0.3);
+  text-align: center;
+  margin-top: -73px;
+  padding: 10px;
+  position: relative;
+  color: #ffffff;
+}
+.gallery__description h3 {
+  margin: 0;
+  color: #ffffff;
+}
+.gallery__description p {
+  margin: 0;
+}
 
 .article__grid {
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 1fr;
   gap: 20px;
+}
+@media screen and (min-width: 540px) {
+  .article__grid {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 .article__photo {
   width: 100%;
+  max-width: 400px;
+}
+.article__span {
+  font-weight: bold;
+  text-transform: lowercase;
+  font-family: "M PLUS Code Latin", sans-serif;
+}
+.article__credit {
+  font-size: 10px;
+}
+.article__linkback {
+  padding-top: 20px;
+}
+.article__linkback a {
+  color: #000000;
+  text-decoration: none;
+  border-bottom: 1px dashed #000000;
+}
+.article__linkback a:hover {
+  border-bottom: 1px solid #000000;
 }
 
 * {
@@ -195,6 +242,7 @@ body {
   padding: 0;
   max-width: 1400px;
   font-family: "Roboto", sans-serif;
+  background-color: #ece9e9;
 }
 
 .footer {

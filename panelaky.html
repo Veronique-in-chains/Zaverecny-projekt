@@ -1,0 +1,33 @@
+---
+layout: template-content-page.njk
+title: Paneláky | Sídliště Novodvorská
+foto: namesti_jaro.webp
+---
+
+<div class="box">
+  <h2>Paneláky</h2>
+  <p>
+    Pozornější návštěvník zjistí, že sídliště je zastavěno dvěma typy panelových
+    domů – takzvaně „deskovými“ domy soustavy T08B a „bodovými“ (neboli věžáky)
+    T06B. Tyto takzvané panelové soustavy byly použity pro stavbu sídliště jako
+    tehdy nejmodernější typ paneláků. Pojďme se na ně blíže podívat.
+  </p>
+
+  <div class="gallery">
+    {% for panelak in panelaky %}
+    <div class="gallery__item">
+      <a href="/panelaky/{{ panelak.nazev | slug }}">
+        <img
+          class="gallery__photo"
+          src="/images/{{ panelak.foto }}"
+          alt="{{ panelak.nazev }}"
+        />
+        <div class="gallery__description">
+          <h3>{{ panelak.nazev }}</h3>
+          <p>zobrazit detail</p>
+        </div>
+      </a>
+    </div>
+    {% endfor%}
+  </div>
+</div>

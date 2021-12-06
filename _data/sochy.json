@@ -18,7 +18,11 @@
 		"autor": "Ladislav Kovařík",
     "rok": 1967,
     "popis": "Třetí dílo, které nalezneme na náměstíčku, je sousoší Tanec, uprostřed atria mezi poštou a květinářstvím. Socha sem byla přestěhována až v devadesátých letech, její původní domov byl na Zahradním městě u nákupního centra Cíl.",
-    "foto": "tanec.webp"
+    "foto": "tanec.webp",
+    "licence": "https://commons.wikimedia.org/wiki/File:Obchodn%C3%AD_centrum_Novodvorsk%C3%A1,_plastika.jpg",
+    "attribution": "ŠJů, Wikimedia Commons",
+    "licenceNazev": "CC BY-SA 3.0",
+    "licenceLink": "https://creativecommons.org/licenses/by-sa/3.0"
 	},
 	{
 		"nazev": "Sloup",
