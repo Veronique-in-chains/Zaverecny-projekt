@@ -18,6 +18,10 @@
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.25);
     margin: 40px auto;
   }
+  &__image {
+    width: 100%;
+    max-width: 400px;
+  }
   h2 {
     font-family: variables.$font_header;
   }
