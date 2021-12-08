@@ -7,7 +7,7 @@
   background: variables.$c_contrast;
   max-width: 640px;
   margin: auto;
-  padding: 50px;
+ 
   &:first-child {
     @media screen and (min-width: variables.$large_bp) {
       margin-top: -40px;
@@ -18,9 +18,14 @@
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.25);
     margin: 40px auto;
   }
+  &__text {
+    padding: 50px;
+  }
   &__image {
     width: 100%;
-    max-width: 400px;
+    height: 300px;
+    object-fit: cover;
+    
   }
   h2 {
     font-family: variables.$font_header;
@@ -28,11 +33,24 @@
   h3 {
     font-family: variables.$font_header;
   }
+  h4 {
+    font-family: variables.$font_header;
+    margin: 20px 0 0 0;
+  }
   p {
     line-height: 1.5;
     margin-top: 0;
   }
+  a {
+    color: variables.$c_primary;
+    text-decoration: none;
+    border-bottom: 1px dashed variables.$c_primary;
+    &:hover {
+      border-bottom: 1px solid variables.$c_primary;
+    }
+  }
 }
+
 
 .box__flex {
   @media screen and (min-width: variables.$small_bp) {
