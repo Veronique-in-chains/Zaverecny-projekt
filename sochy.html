@@ -4,26 +4,26 @@ title: Sochy | Sídliště Novodvorská
 foto: striska.webp
 ---
 
-
-
 <div class="box">
   <div class="box__text">
+    <h2>Sochy</h2>
 
-  <h2>Sochy</h2>
-
-  <div class="gallery">
-
-    {% for socha in sochy %}
+    <div class="gallery">
+      {% for socha in sochy %}
       <div class="gallery__item">
-      <a href="/sochy/{{ socha.nazev | slug }}">
-        <img class="gallery__photo" src="/images/{{ socha.foto }}" alt="{{ socha.nazev }}">
-        <div class="gallery__description">
-          <h3>{{ socha.nazev }}</h3>
-          <p>zobrazit detail</p>
-        </div>
-      </a>
+        <a href="/sochy/{{ socha.nazev | slug }}">
+          <img
+            class="gallery__photo"
+            src="/images/{{ socha.foto }}"
+            alt="{{ socha.nazev }}"
+          />
+          <div class="gallery__description">
+            <h3>{{ socha.nazev }}</h3>
+            <p>zobrazit detail</p>
+          </div>
+        </a>
       </div>
-    {% endfor %}
+      {% endfor %}
+    </div>
   </div>
-</div>
 </div>

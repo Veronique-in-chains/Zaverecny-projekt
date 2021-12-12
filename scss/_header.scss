@@ -2,7 +2,7 @@
 
 
 .top {
-  background: url(/images/header_bg_h1.webp) bottom / cover no-repeat;
+  background: url(/images/header_bg.webp) bottom / cover no-repeat;
    @media screen and (min-width: variables.$medium_bp) {
     background-position: top;
     height: 650px;
@@ -15,7 +15,25 @@
   &__header {
     height: 400px;
     h1 {
-      display: none;
+      font-family: variables.$font_header;
+      color: variables.$c_contrast;
+      text-align: left;
+      font-size: 10vw;
+      margin: 13vw auto;
+      max-width: 300px;
+      @media screen and (min-width: variables.$small_bp) {
+        font-size: 6.5vw;
+      }
+      @media screen and (min-width: 700px) {
+        margin: 5.5vw auto;
+      }
+      @media screen and (min-width: variables.$medium_bp) {
+        margin: 12vw auto 0 25vw;
+      }
+      @media screen and (min-width: variables.$large_bp) {
+        margin: 13vw auto 0 26vw;
+
+      }
     }
   }
 }

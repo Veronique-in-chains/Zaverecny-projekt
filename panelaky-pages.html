@@ -10,10 +10,26 @@ foto: namesti_jaro.webp
 
 <div class="box">
   <div class="box__text">
-  <article class="article">
-<h2>{{ panelak.nazev }}</h2>
-<p>{{ panelak.popis }}</p>
-<p>{{ panelak.popis2 }}</p>
-</article>
-</div>
+    <article class="article">
+      <h2>{{ panelak.nazev }}</h2>
+      <div class="article__grid">
+        <img class="article__photo" src="/images/{{ panelak.foto }}" alt="{{ panelak.nazev }}">
+      
+      <div class="article__content">
+      <p>{{ panelak.popis }}</p>
+      <p>{{ panelak.popis2 }}</p>
+      {% if panelak.licence %}
+      <div class="article__credit">
+        Foto:
+        <p>
+          <a href="{{ panelak.licence }}">{{ panelak.attribution }}</a>,
+          <a href="{{ panelak.licenceLink }}">{{ panelak.licenceNazev }}</a>,
+          via Wikimedia Commons.
+        </p>
+      </div>
+      {% endif %}
+    </div>
+  </div>
+    </article>
+  </div>
 </div>

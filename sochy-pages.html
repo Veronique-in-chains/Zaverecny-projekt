@@ -8,32 +8,34 @@ layout: template-content-page.njk
 foto: kajaky_detail.webp
 title: Sídliště Novodvorská
 ---
+
 <div class="box">
   <div class="box__text">
-<article class="article">
-  <h2>{{ socha.nazev }}</h2>
-  <div class="article__grid">
-  <img class="article__photo" src="/images/{{ socha.foto }}" alt="{{ socha.nazev }}">
-  <div class="article__content">
-  <p>
-    <span class="article__span">Autor:</span> {{ socha.autor }}
-  </p>
-  <p>
-    <span class="article__span">Rok vzniku:</span> {{ socha.rok }}
-  </p>
-  <p>
-    {{ socha.popis }}
-  </p>
-  {% if socha.licence %}
-  <div class="article__credit">
-  Foto:
-    <p><a href="{{ socha.licence }}">{{ socha.attribution }}</a>, 
-      <a href="{{ socha.licenceLink }}">{{ socha.licenceNazev }}</a>, via Wikimedia Commons.</p>
+    <article class="article">
+      <h2>{{ socha.nazev }}</h2>
+      <div class="article__grid">
+        <img
+          class="article__photo"
+          src="/images/{{ socha.foto }}"
+          alt="{{ socha.nazev }}"
+        />
+        <div class="article__content">
+          <p><span class="article__span">Autor:</span> {{ socha.autor }}</p>
+          <p><span class="article__span">Rok vzniku:</span> {{ socha.rok }}</p>
+          <p>{{ socha.popis }}</p>
+          {% if socha.licence %}
+          <div class="article__credit">
+            Foto:
+            <p>
+              <a href="{{ socha.licence }}">{{ socha.attribution }}</a>,
+              <a href="{{ socha.licenceLink }}">{{ socha.licenceNazev }}</a>,
+              via Wikimedia Commons.
+            </p>
+          </div>
+          {% endif %}
+        </div>
+      </div>
+      <p class="article__linkback"><a href="/sochy/"><< zpět na přehled</a></p>
+    </article>
   </div>
-  {% endif %}
-</div>
-</div>
-<p class="article__linkback"><a href="/sochy/"><< zpět na přehled</a></p>
-</article>
-</div>
 </div>
