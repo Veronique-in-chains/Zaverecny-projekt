@@ -19,8 +19,8 @@
       color: variables.$c_contrast;
       text-align: left;
       font-size: 10vw;
-      margin: 13vw auto;
-      max-width: 300px;
+      margin: 15vw auto;
+      max-width: 250px;
       @media screen and (min-width: variables.$small_bp) {
         font-size: 6.5vw;
       }
@@ -32,7 +32,7 @@
       }
       @media screen and (min-width: variables.$large_bp) {
         margin: 13vw auto 0 26vw;
-
+        font-size: 5.5vw;
       }
     }
   }

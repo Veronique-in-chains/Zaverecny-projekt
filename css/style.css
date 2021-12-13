@@ -20,8 +20,8 @@
   color: #ffffff;
   text-align: left;
   font-size: 10vw;
-  margin: 13vw auto;
-  max-width: 300px;
+  margin: 15vw auto;
+  max-width: 250px;
 }
 @media screen and (min-width: 540px) {
   .top__header h1 {
@@ -41,6 +41,7 @@
 @media screen and (min-width: 900px) {
   .top__header h1 {
     margin: 13vw auto 0 26vw;
+    font-size: 5.5vw;
   }
 }
 
@@ -153,12 +154,16 @@
   height: 300px;
   -o-object-fit: cover;
      object-fit: cover;
+  padding: 0;
 }
 .box h2 {
+  margin: 0;
+  padding-bottom: 20px;
   font-family: "M PLUS Code Latin", sans-serif;
 }
 .box h3 {
   font-family: "M PLUS Code Latin", sans-serif;
+  padding-bottom: 10px;
 }
 .box h4 {
   font-family: "M PLUS Code Latin", sans-serif;
