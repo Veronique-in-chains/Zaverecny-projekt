@@ -19,7 +19,7 @@
   font-family: "M PLUS Code Latin", sans-serif;
   color: #ffffff;
   text-align: left;
-  font-size: 10vw;
+  font-size: 41px;
   margin: 15vw auto;
   max-width: 250px;
 }
@@ -41,7 +41,7 @@
 @media screen and (min-width: 900px) {
   .top__header h1 {
     margin: 13vw auto 0 26vw;
-    font-size: 5.5vw;
+    font-size: 5.3vw;
   }
 }
 
