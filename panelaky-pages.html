@@ -17,7 +17,9 @@ foto: namesti_jaro.webp
   <div class="box__text">
       <p>{{ panelak.popis2 }}</p>
   </div>
+      {% if panelak.foto2 %}
       <img class="box__image" src="/images/{{ panelak.foto2 }}" alt="{{ panelak.nazev }}">
+      {% endif %}
   <div class="box__text">
       {% if panelak.licence %}
       <div class="article__credit">
