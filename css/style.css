@@ -1,47 +1,49 @@
 .top {
-  background: url(/images/header_bg.webp) bottom/cover no-repeat;
-  height: 500px;
-  margin: 0;
+  background-image: url(/images/header_bg.webp);
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
   font-family: "Roboto", sans-serif;
   display: flex;
   flex-direction: column;
+  margin: 0;
 }
 @media screen and (min-width: 800px) {
   .top {
     background-position: top;
-    height: 650px;
   }
 }
 .top__header {
-  height: 400px;
+  height: 500px;
+}
+@media screen and (min-width: 800px) {
+  .top__header {
+    height: 650px;
+  }
 }
 .top__header h1 {
   font-family: "M PLUS Code Latin", sans-serif;
   color: #ffffff;
   text-align: left;
-  font-size: 41px;
-  margin: 15vw auto;
-  max-width: 250px;
-}
-@media screen and (min-width: 540px) {
-  .top__header h1 {
-    font-size: 6.5vw;
-  }
-}
-@media screen and (min-width: 700px) {
-  .top__header h1 {
-    margin: 5.5vw auto;
-  }
+  font-size: 48px;
+  margin: 100px auto 0 auto;
+  width: 300px;
 }
 @media screen and (min-width: 800px) {
   .top__header h1 {
-    margin: 12vw auto 0 25vw;
+    margin-top: 120px;
   }
 }
 @media screen and (min-width: 900px) {
   .top__header h1 {
-    margin: 13vw auto 0 26vw;
-    font-size: 5.3vw;
+    font-size: 59px;
+    margin-top: 160px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .top__header h1 {
+    font-size: 69px;
+    margin-top: 250px;
   }
 }
 
