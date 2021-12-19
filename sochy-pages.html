@@ -6,7 +6,7 @@ pagination:
 permalink: "sochy/{{ socha.nazev | slug }}/"
 layout: template-content-page.njk
 foto: kajaky_detail.webp
-title: Sídliště Novodvorská
+title: Sídliště Novodvorská | Sochy
 ---
 
 <div class="box">
@@ -27,8 +27,8 @@ title: Sídliště Novodvorská
           <div class="article__credit">
             Foto:
             <p>
-              <a href="{{ socha.licence }}">{{ socha.attribution }}</a>,
-              <a href="{{ socha.licenceLink }}">{{ socha.licenceNazev }}</a>,
+              <a href="{{ socha.licence }}" target="_blank">{{ socha.attribution }}</a>,
+              <a href="{{ socha.licenceLink }}" target="_blank">{{ socha.licenceNazev }}</a>,
               via Wikimedia Commons.
             </p>
           </div>

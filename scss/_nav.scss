@@ -34,7 +34,6 @@
     color: variables.$c_contrast;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
     &:hover {
-      font-weight: 700;
       @media screen and (min-width: variables.$small_bp) {
         border-bottom: 2px solid variables.$c_contrast;
       }

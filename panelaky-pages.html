@@ -6,6 +6,7 @@ pagination:
 permalink: "panelaky/{{ panelak.nazev | slug }}/"
 layout: template-content-page.njk
 foto: namesti_jaro.webp
+title: Paneláky | Sídliště Novodvorská
 ---
 
 <div class="box">
@@ -25,8 +26,8 @@ foto: namesti_jaro.webp
       <div class="article__credit">
         Foto:
         <p>
-          <a href="{{ panelak.licence }}">{{ panelak.attribution }}</a>,
-          <a href="{{ panelak.licenceLink }}">{{ panelak.licenceNazev }}</a>,
+          <a href="{{ panelak.licence }}" target="_blank">{{ panelak.attribution }}</a>,
+          <a href="{{ panelak.licenceLink }}" target="_blank">{{ panelak.licenceNazev }}</a>,
           via Wikimedia Commons.
         </p>
       </div>

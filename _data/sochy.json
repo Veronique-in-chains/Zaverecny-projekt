@@ -1,21 +1,21 @@
 [
-	{
-		"nazev": "Dálky",
-		"autor": "Jiří Novák",
+  {
+    "nazev": "Dálky",
+    "autor": "Jiří Novák",
     "rok": 1969,
     "popis": "Dominanta sídliště, kinetická plastika s bazénkem, zdobí náměstíčko před hotelovým domem. Při renovaci náměstí v roce 2010 byla zrestaurována.",
     "foto": "dalky_detail.webp"
-	},
-	{
-		"nazev": "Sedící figura",
-		"autor": "Miloslav Chlupáč",
+  },
+  {
+    "nazev": "Sedící figura",
+    "autor": "Miloslav Chlupáč",
     "rok": 1973,
     "popis": "Travertinová socha byla odstraněna při rekonstrukci náměstí a její další osud nebyl znám. V roce 2019 byla náhodou objevena na skládce v Řeporyjích a po zrestaurování vrácena na náměstí, tentokrát před kulturní centrum.",
     "foto": "sedici-figura.webp"
-	},
-	{
-		"nazev": "Tanec",
-		"autor": "Ladislav Kovařík",
+  },
+  {
+    "nazev": "Tanec",
+    "autor": "Ladislav Kovařík",
     "rok": 1967,
     "popis": "Třetí dílo, které nalezneme na náměstíčku, je sousoší Tanec, uprostřed atria mezi poštou a květinářstvím. Socha sem byla přestěhována až v devadesátých letech, její původní domov byl na Zahradním městě u nákupního centra Cíl.",
     "foto": "tanec.webp",
@@ -23,26 +23,26 @@
     "attribution": "ŠJů, Wikimedia Commons",
     "licenceNazev": "CC BY-SA 3.0",
     "licenceLink": "https://creativecommons.org/licenses/by-sa/3.0"
-	},
-	{
-		"nazev": "Sloup",
-		"autor": "Věra Janoušková",
+  },
+  {
+    "nazev": "Sloup",
+    "autor": "Věra Janoušková",
     "rok": 1969,
     "popis": "Osinkocementová plastika Sloup není příliš nápadná a snadno ji přehlédneme. Najdeme ji na Novodvorské na druhé straně ulice od náměstí.",
     "foto": "sloup.webp"
-	},
-	{
-		"nazev": "Vazby",
-		"autor": "Jiří Novák",
-    "rok": 0,
-    "popis": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nulla non arcu lacinia neque faucibus fringilla. Praesent vitae arcu tempor neque lacinia pretium. Morbi leo mi, nonummy eget tristique non, rhoncus non leo. Integer in sapien.",
-    "foto": "kajaky.webp"
-	},
+  },
   {
-		"nazev": "Keramické sloupky",
-		"autor": "Alena Kroupová",
+    "nazev": "Vazby",
+    "autor": "Jiří Novák",
+    "rok": 1965,
+    "popis": "Druhou realizací sochaře Jiřího Nováka pro sídliště Novodvorská je plastika Vazby (někdy nazývaná také Řetěz) na průčelí základní školy Filozofská. Monumentální hliníkové dílo je typickým pro Novákovu tvorbu - skládaná kompozice, organické klenutí, kovový plech. Volné zachycení na mozaice připomíná let či plutí v prostoru.",
+    "foto": "kajaky.webp"
+  },
+  {
+    "nazev": "Keramické sloupky",
+    "autor": "Alena Kroupová",
     "rok": 0,
     "popis": "Pozůstatky dekorativní stěny z glazovaných bílo-žlutých keramických sloupků.",
     "foto": "sloupky.webp"
-	}
+  }
 ]
