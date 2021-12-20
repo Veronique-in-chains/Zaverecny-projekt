@@ -23,18 +23,18 @@
       color: variables.$c_contrast;
       text-align: left;
       font-size: 48px;
-      margin: 100px auto 0 auto;
+      margin: 130px auto 0 auto;
       width: 300px;
       @media screen and (min-width: variables.$medium_bp) {
-        margin-top: 120px;
+        margin-top: 150px;
       }
       @media screen and (min-width: variables.$large_bp) {
         font-size: 59px;
-        margin-top: 160px;
+        margin-top: 190px;
       }
       @media screen and (min-width: 1200px) {
         font-size: 69px;
-        margin-top: 250px;
+        margin-top: 280px;
       }
     }
   }
